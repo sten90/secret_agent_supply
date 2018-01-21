@@ -1,0 +1,45 @@
+html {
+  font-family: Helvetica;
+  font-size: 18px;
+  color: white;
+}
+
+/* Header */
+header {
+  display: flex;
+  background-color: black;
+  justify-content: center;
+}
+
+.container {
+  width: 960px;
+  display: flex;
+}
+
+.logo {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo img {
+  padding-left: 0.5rem;
+  height: 1.5rem;
+}
+
+.logo nav {
+  font-size: 1rem;
+  padding: 0.66rem 1rem;
+}
+
+/* Banner */
+.banner {
+  display: flex;
+  background-image: url("../images/moto.jpeg");
+}
+
+.new_arrival {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
