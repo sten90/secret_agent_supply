@@ -79,10 +79,21 @@ nav {
 }
 
 /* Product images !!! IMAGES CAPTION NOT ALIGNED !!! GLASSES PICTURE OVERSIZED !!! */
-.products {
+.main_body {
   display: flex;
-  justify-content: center;
   padding-top: 3rem;
+  justify-content: center;
+}
+
+.main_container {
+  width: 960px;
+  display: flex;
+  flex-direction: column;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
 }
 
 .product_slot {
