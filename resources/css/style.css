@@ -1,3 +1,5 @@
+/* The background image of Banner gets doubled, it should fill the whole width */
+
 html {
   font-family: Helvetica;
   font-size: 18px;
@@ -26,7 +28,7 @@ header {
   height: 1.5rem;
 }
 
-.logo nav {
+.logo span {
   font-size: 1rem;
   padding: 0.66rem 1rem;
 }
@@ -35,11 +37,63 @@ header {
 .banner {
   display: flex;
   background-image: url("../images/moto.jpeg");
+  height: 25rem; /* Banner */
+  justify-content: center;
 }
 
 .new_arrival {
   background-color: black;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+  flex-direction: column;
+  width: 20rem;
+  padding: 2rem 3rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+p#arrivals_subheader {
+  font-size: 2rem;
+  padding-top: 0.25rem;
+}
+
+/* Menu' Bar */
+nav {
+  display: flex;
+  background-color: firebrick;
+  justify-content: center;
+}
+
+.navigation_bar {
+  align-items: center;
+  padding: 0.75rem;
+}
+
+/* Products Images  */
+.products {
+  display: flex;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.product_img {
+  border: 4px solid black;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end   ;
+}
+
+.product_img img {
+  height: 9rem;
+}
+
+.product_img p {
+  background-color: black;
+  padding: 0.5rem;
 }
