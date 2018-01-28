@@ -1,6 +1,8 @@
 /* The background image of Banner gets doubled, it should fill the whole width
 the image of glasses is too big
 the product image captions don't get aligned
+CHECK THE MEDIA when it says max 1024 pixel, should i use reolution dpi??
+the image of the motorbike doesn't fill the whole screen
 */
 
 html {
@@ -47,6 +49,8 @@ header {
   background-image: url("../images/moto.jpeg");
   height: 25rem; /* Banner */
   justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;   /* IT SHOULDN'T REPEAT BUT STILL FILL THE WHOLE WIDTH  */
 }
 
 .new_arrival {
@@ -59,6 +63,27 @@ header {
   padding: 2rem 3rem;
   font-size: 1rem;
   font-weight: bold;
+}
+
+@media only screen and (max-width: 470px) {
+  .new_arrival {
+    padding-top: 1rem;
+    padding-left: 2rem;
+
+  }
+
+
+
+  .new_arrival p {
+    font-size: 0.77rem;
+    font-weight: bold;
+  }
+
+  #arrivals_subheader {
+    font-size: 1px;
+    font-weight: bold;
+  }
+
 }
 
 p#arrivals_subheader {
@@ -137,10 +162,10 @@ nav {
 }
 
 .location_hours_main {
-  width: 35%;
   display: flex;
   flex-direction: column;
   padding-bottom: 4rem;
+  width: 35%;
 }
 
 .location_hours_header {
@@ -150,4 +175,61 @@ nav {
 
 #black {
   color: black;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  height: 5rem;
+  align-items: center;
+}
+
+/* MEDIA */
+
+@media only screen and (min-width: 1024px) {
+  #small_screens {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .product_slot {
+    width: 47%;
+  }
+
+  .location_hours_main {
+    width: 35%;
+  }
+
+  #thermal_glasses {
+    display: none;
+  }
+
+  #small_screens .navigation_bar {
+    justify-content: center;
+}
+
+  #big_screens {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  #cellular_watch {
+    display: none;
+  }
+
+  .product_slot {
+    width: 90%;
+  }
+
+  footer p {
+    text-align: center;
+  }
+
+  .location_hours_main {
+    width: 90%;
+  }
 }
